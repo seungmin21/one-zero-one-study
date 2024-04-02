@@ -8,3 +8,5 @@ const obj = {
 }
 
 console.log(obj.func());
+// 전역 객체로의 this
+console.log(this === window)
