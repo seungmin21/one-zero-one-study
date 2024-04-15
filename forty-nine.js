@@ -1,11 +1,14 @@
 // 문제 49 : 함수 매개변수 기본값을 설정하는 코드를 작성하세요.
 
 // x와 y가 둘 다 10을 대입한 것이 아니라 y에만 10을 대입한 것
-function add(x, y = 10) {
+function add(x = 5, y = 5) {
   return x + y;
 }
 
-console.log(add(1));
+// 기본값이 정해져 있기 때문에 값을 넣지 않아도 결과값이 존재한다.
+console.log(add())
+
+// console.log(add(1));
 
 // y의 기본값이 할당되어있지만 다시 할당하기 때문에 기본값은 덮어쓰기 된다.
-console.log(add(1, 1));
+// console.log(add(1, 1));
