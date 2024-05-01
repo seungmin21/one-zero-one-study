@@ -3,6 +3,6 @@
 const setting = new Set();
 setting.add(28)
 setting.add('홍길동')
-const iterator = setting.entries();
+const settingArray = Array.from(setting);
 
-console.log(JSON.parse(JSON.stringify(iterator)));
+console.log(JSON.parse(JSON.stringify(settingArray)));
